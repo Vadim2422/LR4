@@ -17,4 +17,10 @@ func main() {
 
 	result := maths.Factorial(number)
 	fmt.Printf("Факториал числа %d равен %d\n", number, result)
+
+	fmt.Print("Введите число для вычисления суммы ряда: ")
+	fmt.Scanln(&number)
+
+	result = maths.SumOfSeries(number)
+	fmt.Printf("Сумма чисел от 1 до %d равна %d\n", number, result)
 }
